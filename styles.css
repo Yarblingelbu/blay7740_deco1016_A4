@@ -1,0 +1,325 @@
+/*text presets*/
+p {
+    text-align: center;
+    font-family: 'Sarala', sans-serif;
+    color: #000000;
+    font-size: 1em;
+
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+}
+
+.logo.header > p {
+    display: block;
+    text-align: right;
+}
+
+.navbar {
+    color: #ffffff;
+    font-family: 'Sarala', sans-serif;
+    font-size: 1em;
+}
+
+a {
+    padding: 10px;
+}
+
+ /* Centered text */
+ .centered {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+  }
+
+/*image presets*/
+img.center {
+    display: block;
+    margin: 0 auto;
+    max-width: 20%;
+    max-height: 20%;
+}
+  
+.bodyimage {
+    height: 50%;
+    width: 100%;
+}
+
+.explanation {
+  width: 100%;
+}
+
+/*display presets*/
+ul {
+    background-color: #00a9e4;
+    padding:10px;
+}
+
+li {
+    display: inline;
+  }
+
+.nav {
+    padding-top: 25px;
+    width: 100%
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+/*Logos on home page*/
+
+.coles, .target, .ebay, .agl {
+  width: 25%;
+  float: left;
+  padding: none;
+}
+
+.ebay {
+  padding-top: 50px;
+}
+
+.agl {
+  padding-top: 100px;
+}
+
+.aglImg {
+  width: 80%;
+}
+
+/*Buttons*/
+button {
+    background-color: #00a9e4;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+    font-size: 1.5em;
+
+}
+
+button:hover {
+    background-color: #3cc2f3;
+}
+
+button:active {
+    background-color: #0191c5;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+
+}
+
+.submit-button {
+  align-items: center;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.small-button {
+  font-size: 1em;
+  margin-right: 10px;
+}
+
+/* Form styles */
+
+.progress {
+    width: 100%;
+    margin:auto;
+    text-align: center;
+    word-spacing: 50px;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    align-content: center;
+    
+  }
+
+  .dotGreen {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(116, 199, 113);
+    border-radius: 50%;
+    display: inline-block;
+    align-content: center;
+  }
+
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'Sarala', sans-serif;
+    color: #000000;
+    font-size: 1em;
+    
+  }
+  
+  form * {
+    box-sizing: border-box;
+  }
+  
+  form .messages {
+    flex: 0 0 100%;
+    text-align: right;
+    padding: 5px 0;
+    color: #ff6361;
+  }
+
+  .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-bottom: 10px;
+  }
+  
+  form > .form-group > label {
+    align-content: right;
+    padding-right:20px;
+    max-width: 120px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 120px;
+  }
+  
+  label span {
+    display: block;
+    font-size: 0.75em;
+    opacity: 0.5;
+  }
+  
+  label + * {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+  }
+
+  label {
+    font-size: 1em;
+    padding-top: 7px;
+  }
+  
+   input, select {
+    padding: 15px;
+    border: none;
+    background-color: white;
+    border-radius: 30px;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+  }
+
+  /* password strength meter */
+  #message {
+    display:none;
+    position: relative;
+  }
+  
+  #message p {
+    font-size: 0.8em;
+    text-align: left;
+  }
+  
+  /* Add a green text color when the requirements are right */
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+  }
+  
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+  }
+
+    /* Media queries */
+    @media screen and (max-width: 768px) {
+      .flex-container {
+        display: block;
+      }
+    
+      .flex-column {
+        width: 100%;
+        margin-bottom: 2em;
+      }
+
+      .fourlogos {
+        display: none;
+      }
+    }
+    
+    @media screen and (max-width: 425px) {
+      body {
+        width: auto;
+        border-radius: 0;
+      }
+    
+      form {
+        width: 100%;
+      }
+    
+      form > label {
+        flex: 0;
+        flex-basis: 100%
+      }
+    
+      button {
+        font-size: 1em;
+      }
+  
+      h1 {
+        font-size: 1em;
+      }
+  
+      p {
+        font-size: 1em;
+      }
+  
+      .nav {
+        font-size: 0.7em;
+      }
+  
+      img.center {
+        max-width: 50%;
+        max-height: 50%;
+      }
+  
+      .bodyimage {
+        background-size: 100%;
+    
+        height: 300px;
+      }
+
+      .coles, .target, .ebay, .agl {
+        padding: none;
+        display: none;
+      
+      }
+    }

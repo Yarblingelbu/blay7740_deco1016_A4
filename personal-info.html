@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Cabin|Sarala&display=swap" rel="stylesheet">
+
+  <title>Flybuys</title>
+</head>
+
+<body>
+  <header>
+      <div class="logo header">
+          <a href="index.html"><img class="center" src="flybuys logo2.png" alt="Flybuys Logo" /></a>
+      <!--<p class="activate-bar"><a href="join.html">join</a><a href="activate.html"> activate</a><a href="index.html">sign
+          in</a></p>-->
+    </div>
+  </header>
+
+  <div class="nav">
+    <ul>
+      <li><a class="navbar" href="points.asp">Collect Points</a></li>
+      <li><a class="navbar" href="rewards.asp">Rewards</a></li>
+      <li><a class="navbar" href="offers.asp">Offers</a></li>
+      <li><a class="navbar" href="travel.asp">Travel</a></li>
+      <li><a class="navbar" href="about.asp">About</a></li>
+    </ul>
+  </div>
+
+  
+    <h2>Sign Up</h2>
+    <div class="progress">
+      <span class="dotGreen"></span>
+      <span class="dotGreen"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span></div>
+    <h3>Personal Details</h3>
+    <form>
+
+      <div class="form-group">
+        <label for="title">Title:</label>
+        <select id="title" name="title">
+          <option value="">Choose Title</option>
+          <option value="Mr">Mr</option>
+          <option value="Mrs">Mrs</option>
+          <option value="Miss">Miss</option>
+          <option value="Ms">Ms</option>
+          <option value="Dr">Dr</option>
+          <option value="Prefer not to say">Prefer not to say</option>
+        </select>
+      </div>
+
+      <div class="messages"></div>
+      <div class="form-group">
+        <label for="name">First Name:</label>
+        <input type="name" id="name" name="name" placeholder="Enter your first name here">
+      </div>
+
+      <div class="messages"></div>
+      <div class="form-group">
+        <label for="Last Name">Last Name:</label>
+        <input type="l-name" id="l-name" name="l-name" placeholder="Enter your last name here">
+
+        <div class="messages"></div>
+        <div class="form-group">
+          <label for="number">Phone Number:</label>
+          <input type="text" id="number" name="number" placeholder="Enter your phone number here">
+
+          <div class="messages"></div>
+          <div id="message">
+            <p><i>We take your phone number to keep your account extra secure</i></p></div>
+        </div>
+
+        <div class="messages"></div>
+        <div class="form-group">
+          <label for="date">DOB:</label>
+          <input type="date" id="date" name="date"></div>
+    </form>
+
+
+    <div class="submit-button">
+        <button class="small-button"><a href="join.html">Back</a></button>
+      <button type="submit"><a href="address.html">Continue</a></button>
+    </div>
+
+
+
+    <script>
+      let form = document.getElementsByTagName("form")[0];
+
+
+      let email = document.getElementById("email");
+      email.addEventListener("change", function (event) {
+        console.log(event);
+
+
+
+      })
+    </script>
+</body>
+
+</html>
